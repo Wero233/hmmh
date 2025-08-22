@@ -1,0 +1,10 @@
+{
+    "name": "exo23/hmmh",
+    "autoload": {
+        "psr-4": {
+            "Hmmh\\" : "includes/",
+            "Hmmh\\Block\\": "includes/block/"
+        }
+    },
+    "require": {}
+}

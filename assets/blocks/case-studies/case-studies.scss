@@ -1,0 +1,125 @@
+.case-studies {
+    font-family: "Quicksand", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    column-count: 2;
+    color: #37474f;
+    column-gap: 55px;
+    @media (max-width: 768px) {
+        column-count: 1;
+    }
+
+    &__item {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+
+        &.is-hidden {
+            display: none;
+        }
+    }
+    &__items {
+        margin-left: 45px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        padding-top: 12px;
+    }
+
+    &__img {
+        img {
+            width: 100%;
+
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    &__link {
+        padding-top: 25.5px;
+        padding-bottom: 120px;
+
+        a {
+            color: #37474f;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            border-bottom: 4px solid #eec536;
+            padding-bottom: 2px;
+            transition: all 0.6s ease;
+
+            &:hover {
+                text-decoration: none;
+                border-color: darken(#eec536, 15%);
+            }
+        }
+    }
+    &__sep {
+        margin: 0 5px;
+        color: #c4c4c4;
+    }
+    &__types {
+        padding-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    &__type {
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+    &__filter {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        margin-bottom: 2rem;
+
+        &-buttons {
+            @media (max-width: 768px) {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 10px;
+            }
+        }
+
+        &-button {
+            margin-bottom: 17px;
+            margin-left: 68px;
+            background: transparent;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 4px 18px;
+            transition:
+                color 0.3s ease,
+                background-color 0.3s ease;
+
+            &:hover {
+                color: #000;
+            }
+
+            &.is-active {
+                background-color: #f1c40f;
+                font-weight: 600;
+                color: #000;
+            }
+            @media (max-width: 768px) {
+                margin-left: 0 !important;
+                margin-bottom: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            &--all {
+                margin-left: 30px;
+            }
+        }
+    }
+}
